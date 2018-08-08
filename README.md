@@ -7,12 +7,17 @@ Install heroku cli
 $ brew install heroku/brew/heroku
 ```
 
+## Clone this repository
+
+```
+git clone git@github.com:mayurc137/serverless-rest-api-boilerplate.git .
+```
+
 ## Install your dependencies 
 
 ```
 npm install 
 ```
-
 
 ## Inititalise Git
 
