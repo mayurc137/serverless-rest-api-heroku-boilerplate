@@ -1,14 +1,17 @@
 const express = require('express');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const app = express();
 
-
 app.set('port', (process.env.PORT || 5000));
-
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(express.static(__dirname));
 app.use(cors({
     origin: true
 }));
+
 
 app.listen(app.get('port'), function () {
     console.log("Node app is running at localhost:" + app.get('port'))
