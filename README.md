@@ -33,6 +33,11 @@ $ git commit -m "init"
 heroku create your-app-name
 ```
 
+## Update your buildpack to heroku/nodejs
+```
+heroku buildpacks:set heroku/nodejs
+```
+
 ## Deploy on Heroku
 
 ```
